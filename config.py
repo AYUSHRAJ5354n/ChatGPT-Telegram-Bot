@@ -21,13 +21,13 @@ if RESET_TIME < 60:
 
 GPT_ENGINE = os.environ.get('GPT_ENGINE', 'gemini')
 API_URL = os.environ.get('API_URL', 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY')
-API = os.environ.get('API', AIzaSyDUWx7Cd5JdaewcIWYxjOri3VUa_1qMWSQ)
+API = os.environ.get('API', None)
 WEB_HOOK = os.environ.get('WEB_HOOK', None)
 CHAT_MODE = os.environ.get('CHAT_MODE', "global")
 GET_MODELS = (os.environ.get('GET_MODELS', "False") == "False") == False
 
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY', None)
-GOOGLE_AI_API_KEY = os.environ.get('GOOGLE_AI_API_KEY', None)
+GOOGLE_AI_API_KEY = os.environ.get('GOOGLE_AI_API_KEY', AIzaSyDUWx7Cd5JdaewcIWYxjOri3VUa_1qMWSQ)
 
 VERTEX_PRIVATE_KEY = os.environ.get('VERTEX_PRIVATE_KEY', None)
 VERTEX_CLIENT_EMAIL = os.environ.get('VERTEX_CLIENT_EMAIL', None)
