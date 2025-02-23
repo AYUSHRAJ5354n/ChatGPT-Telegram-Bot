@@ -19,9 +19,9 @@ RESET_TIME = int(os.environ.get('RESET_TIME', '3600'))
 if RESET_TIME < 60:
     RESET_TIME = 60
 
-GPT_ENGINE = os.environ.get('GPT_ENGINE', 'gpt-4o')
-API_URL = os.environ.get('API_URL', 'https://api.openai.com/v1/chat/completions')
-API = os.environ.get('API', None)
+GPT_ENGINE = os.environ.get('GPT_ENGINE', 'gemini')
+API_URL = os.environ.get('API_URL', 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=GEMINI_API_KEY')
+API = os.environ.get('API', AIzaSyDUWx7Cd5JdaewcIWYxjOri3VUa_1qMWSQ)
 WEB_HOOK = os.environ.get('WEB_HOOK', None)
 CHAT_MODE = os.environ.get('CHAT_MODE', "global")
 GET_MODELS = (os.environ.get('GET_MODELS', "False") == "False") == False
